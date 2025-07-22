@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Juno</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd2d61f9f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo_white.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I am <span>Juno Wong</span><br>From Seattle</h1>
+        </div>
+    </div>
+</div>
+<!-------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About_Me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hello! I’m Juno Wong, an Electrical Engineering student at 
+                the University of Washington. My passion lies in software development 
+                and electrical engineering, and I aim to create innovative technologies 
+                that improve lives.
+
+                Originally, I wanted to be a doctor to help others, but I realized that 
+                I could make a greater impact through engineering. By merging my skills 
+                in software and hardware, I hope to develop solutions that enhance 
+                healthcare and save lives.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web/App Development</li>
+                        <li><span>Electrical Engineering</span><br>Circuit Design<br>CPU Design<br>Embedded System</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Assistant Engineer Intern at Innotech Enviro Limited</span><br>05/2020 - 08/2020</li>
+                        <li><span>Law Intern at Holman Fenwick Willan</span><br>07/2022 - 08/2022</li>
+                        <li><span>Insurance Broker Intern at Grandwood</span><br>08/2024 - 09/2024</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Electrical Engineering at University of Washington</span><br>2022-Current</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------services------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Serivces</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I am a web design enthusiast with several years of experience in creating visually appealing and 
+                user-friendly websites. My skills include proficiency in HTML, CSS, and JavaScript, along with a 
+                keen eye for design aesthetics and usability. Over the years, I have worked on various projects, 
+                honing my ability to translate ideas into functional web solutions. I am passionate about staying 
+                current with design trends and best practices to deliver high-quality results that meet client 
+                needs.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I am a web design enthusiast with several years of experience in creating visually appealing and 
+                user-friendly websites. My skills include proficiency in HTML, CSS, and JavaScript, along with a 
+                keen eye for design aesthetics and usability. Over the years, I have worked on various projects, 
+                honing my ability to translate ideas into functional web solutions. I am passionate about staying 
+                current with design trends and best practices to deliver high-quality results that meet client 
+                needs.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I am a web design enthusiast with several years of experience in creating visually appealing and 
+                user-friendly websites. My skills include proficiency in HTML, CSS, and JavaScript, along with a 
+                keen eye for design aesthetics and usability. Over the years, I have worked on various projects, 
+                honing my ability to translate ideas into functional web solutions. I am passionate about staying 
+                current with design trends and best practices to deliver high-quality results that meet client 
+                needs.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------Portfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Book Recommender System</h3>
+                    <p>The Book Recommender System provides personalized book suggestions based on user preferences 
+                    and reading history. Using collaborative and content-based filtering techniques, it analyzes user 
+                    ratings, genres, and authors to recommend books that match individual tastes.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>RISV Pipelined CPU Design</h3>
+                    <p>The RISC pipelined CPU is designed to efficiently execute a sequence of instructions through 
+                    a multi-stage pipeline architecture. This design enhances instruction throughput by overlapping 
+                    the execution of multiple instructions, allowing for higher performance in processing tasks.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Filters and Audio Mixer</h3>
+                    <p>The Filters and Audio Mixer project focused on designing audio filters to meet specific 
+                    performance criteria. I analyzed their characteristics, created a functional audio mixer 
+                    using these filters, and assisted in circuit design by calculating expected performance 
+                    data and measuring actual results.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> wong0805@uw.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i> +1 (253) 374 8801</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=zh_HK"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_chunho_wch?igsh=N2hxMXMzdmpseHJ3&utm_source=qr"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/chun-ho-wong-1a71072a9"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/JUNO_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ⓒ Juno. Made with <i class="fa-solid fa-heart"></i> by Juno Wong</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxYIi0PFCKiq1sH4b8NIpqFf4yKjLtnHS4yfSireWgRA62WlqJ5MHyjtGDtqBJ85Y6E/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
